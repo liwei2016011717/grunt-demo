@@ -1,19 +1,13 @@
-exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
-    htmlhint: {
-    html: {
-        options: {
-            htmlhintrc: '.htmlhintrc'
-        },
-        src: ['*.html']
-          
-      }
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
+      src: ['*.css']
+
     }
-                
   });
-
-  grunt.loadNpmTasks('grunt-htmlhint');
-
-  grunt.registerTask('default', ['htmlhint']);
-
+  grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.registerTask('default', ['csslint']);
 };
