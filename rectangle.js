@@ -14,5 +14,5 @@ $(function(){
     
     $perimeter.val(p);
     $area.val(a);
-  })
-})
+  });
+});

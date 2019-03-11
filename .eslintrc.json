@@ -1,11 +1,11 @@
 {
     "env": {
         "browser": true,
-        "es6": true,
-        "jQuery": true
+        "node": true,
+        "jquery": true
     },
     "extends": "eslint:recommended",
-    "globals": {
+    /*"globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
@@ -17,11 +17,15 @@
     },
     "plugins": [
         "react"
-    ],
+    ],*/
     "rules": {
         "indent": [
             "error",
-            4
+            2,
+            {
+              "SwitchCase":1,
+              "VariableDeclarator":{"var":2,"let":2,"const":3}
+            }
         ],
         "linebreak-style": [
             "error",
