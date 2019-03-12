@@ -1,23 +1,11 @@
 module.exports = function (grunt) {
-
   grunt.initConfig({
-
-        cssmin: {  
-        
-              'rectangle.min.css': 'rectangle.css'
-        
-            }
-
-                  
+    cssmin: {  
+      'dist/rectangle.css': './rectangle.css'
+    }
   });
-
-
-
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-
-
-
-      grunt.registerTask('default', ['cssmin']); 
-
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.registerTask('default', ['cssmin']); 
 
 };
+
