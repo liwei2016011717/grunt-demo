@@ -1,0 +1,1 @@
+$(function(){var n=$("#width"),t=$("#length"),a=$("#btn"),v=$("#perimeter"),i=$("#area");a.click(function(){var a=Number(n.val()),e=Number(t.val()),r=2*(a+e),l=a*e;v.val(r),i.val(l)})});
