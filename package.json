@@ -1,6 +1,6 @@
 {
   "name": "grunt-demo",
-  "version": "1.0.0",
+  "version":"1.0.0",
   "description": "less预处理",
   "main": "rectangle.js",
   "dependencies": {
