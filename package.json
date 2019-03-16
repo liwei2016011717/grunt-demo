@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "grunt": "^1.0.3",
+    "grunt-contrib-eslint": "0.0.5",
     "grunt-eslint": "^21.0.0"
   },
   "scripts": {
