@@ -10,5 +10,3 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-eslint');
   grunt.registerTask('default' , ['eslint']);
 };
-
-
