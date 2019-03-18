@@ -5,8 +5,8 @@ module.exports=function(grunt){
         separator: ';',
       },
       dist: {
-        src: ['src/intro.js', 'src/project.js', 'src/outro.js'],
-        dest: 'dist/built.js',
+        src: ['rectangle.js', 'calc.js'],
+        dest: 'dist/bundle.js',
       },
     },
   });
