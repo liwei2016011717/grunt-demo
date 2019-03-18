@@ -1,14 +1,13 @@
 module.exports = function(grunt) {
   grunt.initConfig({
-    less: {
-      development: {
-        files:{
-          'css/layout.css': 'less/layout.less'
+    sprite: {
+        all: {
+           src: 'images/*.png',
+           dest: 'dist/all.png',
+           destCss: 'dist/sprites.css'
         }
-      }
     }
-
   });
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.registerTask('default', ['less']);
+  grunt.loadNpmTasks('grunt-spritesmith');
+  grunt.registerTask('default', ['sprite']);
 };
